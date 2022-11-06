@@ -12,6 +12,7 @@ public class ArrayTasks {
      */
     public String[] seasonsArray() {
 
+        return new String[]{"winter", "spring", "summer", "autumn"};
     }
 
     /**
