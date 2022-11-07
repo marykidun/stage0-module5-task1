@@ -12,9 +12,10 @@ public class FridgeAlgorithm {
      * P.S All methods of interaction with the fridge can be found inside the {@see Fridge} class.
      */
     public static void fridgeAlgorithm(Fridge fridge) {
-        String Fridge = "milk";
+
+        System.out.println(Fridge.class.getName());
     }
-    public static void main(String[] args) {
-        fridgeAlgorithm(fridge);
+
+
     }
-}
+
