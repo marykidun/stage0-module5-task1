@@ -88,9 +88,9 @@ public class ArrayTasks {
             else if (arr[i] < x) {
                 count++;
             }
-            System.out.println(findIndexOfNumber(arr, x));
+            System.out.println(findIndexOfNumber(num2, x));
         }
-        return (isX == false) ? -1 : count;
+        return (!isX) ? -1 : count;
     }
 
     /**
@@ -162,7 +162,7 @@ public class ArrayTasks {
      * arr = ["Bob", "Nick"]               -> ["Nick", "Bob"]
      * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
      */
-    public String[] reverseArray(String[] arr) {
+    public static String[] reverseArray(String[] arr) {
         String[] words = {"banana", "pineapple", "kiwi"};
 
         for (int i = words.length; i >= 0; i--) {
@@ -172,6 +172,9 @@ public class ArrayTasks {
 
 
         return words;
+    }
+    public static void main(String[] args) {
+
     }
 }
 
