@@ -25,13 +25,13 @@ public class AlgorithmComplexity {
         int c = arr.length;
         int other = arr[arr.length - 1];
         System.out.println(other);
-        return badLinerSearch() ;
-    }
 
-    public static void main(String[] args) {
-        badLinerSearch();
 
-    }
+       return badLinerSearch();
+
+
+
+}
 
     /**
      * Return the complexity of accessing an array element by index.
@@ -48,16 +48,17 @@ public class AlgorithmComplexity {
      * Return the complexity of a binary search.
      */
     public Complexity binarySorting() {
-        int[] arr = new int[]{1, 2, 3, 4, 5};
+        int[] key1 = new int[]{1, 7, 3, 4, 5};
         int low = 0, high = 0, key = 0;
         if (low >= high) {
             int mid = low + (high - low) / 2;
-            if (arr[mid] == key) {
+            if (key1[mid] == key) {
                 return binarySorting();
             }
-            if (arr[mid] > key) {
+            if (key1[mid] > key) {
                 return binarySorting();
             } else {
+                System.out.println(key1);
 
             }
 
@@ -69,7 +70,7 @@ public class AlgorithmComplexity {
      * Return the complexity of the twoCycleSorting algorithm.
      */
     public Complexity twoCycleSorting() {
-        int intArray[] = {12, 2, 20, 76, 50};
+        int [] intArray = {12, 2, 20, 76, 50};
         int i = 0;
         while (i < intArray.length) {
             if (intArray[i] - 1 != i) {
@@ -79,6 +80,7 @@ public class AlgorithmComplexity {
                 intArray[i] = intArray[index];
                 intArray[index] = x;
             } else {
+                System.out.println(intArray);
                 i++;
             }
         }
