@@ -25,7 +25,7 @@ public class AlgorithmComplexity {
         int c = arr.length;
         int other = arr[arr.length - 1];
         System.out.println(other);
-        return null;
+        return badLinerSearch() ;
     }
 
     public static void main(String[] args) {
@@ -40,7 +40,7 @@ public class AlgorithmComplexity {
         int[] arr = new int[]{1, 2, 3};
         System.out.println(arr[2]);
 
-        return null;
+        return arrayIndexItemAccess();
     }
 
 
